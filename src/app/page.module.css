@@ -3,11 +3,13 @@
   max-width: var(--max-width);
   height: 100%;
   min-height: 100vh;
+  position: relative;
+  padding-top: calc(1 * var(--header-height));
 }
 
 .hero {
   width: 100%;
-  height: 70vh;
+  margin: 15vh 0;
   align-items: start;
   gap: 20px;
 }
@@ -50,4 +52,9 @@
 }
 .action-2:hover {
   color: rgb(var(--text-alt));
+}
+
+.image {
+  width: 100%;
+  height: auto;
 }/*# sourceMappingURL=page.module.css.map */

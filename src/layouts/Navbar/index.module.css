@@ -1,10 +1,29 @@
-.navbar {
+.header {
   position: fixed;
+  left: 0;
+  right: 0;
   top: 0;
+  z-index: 50;
+  height: var(--header-height);
+  transition: background 0.2s ease, height 0.2s ease;
+}
+
+.container {
   width: 100%;
   max-width: var(--max-width);
-  height: 64px;
+}
+
+.items {
+  height: 100%;
+  width: 100%;
+  max-width: var(--max-width);
   justify-content: unset !important;
+}
+
+.scrolled {
+  height: var(--header-height-scrolled);
+  background: #04040A;
+  border-bottom: 1px solid rgba(37, 37, 37, 0.5019607843);
 }
 
 .nav-link {

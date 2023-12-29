@@ -11,6 +11,9 @@
   --primary: 152, 159, 228;
   --secondary: 24, 33, 137;
   --accent: 33 50, 235;
+
+  --header-height: 100px;
+  --header-height-scrolled: 80px;
 }
 
 .fx-container {

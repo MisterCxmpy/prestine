@@ -10,4 +10,14 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+}
+
+@media (max-width: 768px) {
+  .roadmap-line {
+    width: 4px;
+    height: 100vh;
+    margin-left: 0;
+    flex-direction: column;
+    left: 25px;
+  }
 }/*# sourceMappingURL=index.module.css.map */

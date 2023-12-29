@@ -3,8 +3,6 @@
   border-radius: 50%;
   width: 50px;
   height: 50px;
-  position: absolute;
-  left: 20%;
   display: flex;
   justify-content: center;
   align-items: end;
@@ -12,7 +10,7 @@
   > p {
     position: absolute;
     width: max-content;
-    max-width: 320px;
+    max-width: 200px;
     flex: 1 0 auto;
     text-align: center;
     font-size: 20px;
@@ -26,22 +24,4 @@
 
 .title {
   top: 75px;
-}
-
-.roadmap-point:nth-child(1) {
-  left: 20%;
-}
-
-.roadmap-point:nth-child(2) {
-  left: 40%;
-
-}
-
-.roadmap-point:nth-child(3) {
-  left: 60%;
-  
-}
-
-.roadmap-point:nth-child(4) {
-  left: 80%;
 }

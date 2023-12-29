@@ -23,31 +23,35 @@
 }
 
 .call-to-action {
+
   margin-top: 10px;
-}
-.call-to-action > button {
-  width: 200px;
-  margin-right: 20px;
-  padding: 20px 0;
-  border-radius: var(--border-radius);
-  border: none;
-  font-size: 16px;
-  font-weight: bold;
-  cursor: pointer;
+
+  > button {
+    width: 200px;
+    margin-right: 20px;
+    padding: 20px 0;
+    border-radius: var(--border-radius);
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+  }
 }
 
 .action-1 {
   background: rgb(var(--secondary));
   color: rgb(var(--text));
-}
-.action-1:hover {
-  background: rgba(var(--secondary), 0.3);
+
+  &:hover {
+    background: rgba(var(--secondary), 0.3);
+  }
 }
 
 .action-2 {
   background: none;
   color: rgb(var(--text));
+
+  &:hover {
+    color: rgb(var(--text-alt));
+  }
 }
-.action-2:hover {
-  color: rgb(var(--text-alt));
-}/*# sourceMappingURL=page.module.css.map */

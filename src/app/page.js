@@ -3,6 +3,15 @@ import styles from './page.module.css'
 
 export default function Home() {
   return (
-    <h1>Home page</h1>
+    <div className={styles['main']}>
+      <div className={`${styles['hero']} fx-center fx-column`}>
+        <h1 className={styles['title']}>Prestine: Elevate Efficiency</h1>
+        <h2 className={styles['sub-heading']}>Simplify, Boost Efficiency, Delight Customers with Prestine.</h2>
+        <div className={styles['call-to-action']}>
+          <button className={styles['action-1']}>Learn more</button>
+          <button className={styles['action-2']}>Read Documentation</button>
+        </div>
+      </div>
+    </div>
   )
 }

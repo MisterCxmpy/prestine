@@ -1,0 +1,20 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  max-width: var(--max-width);
+  height: 64px;
+  justify-content: unset !important;
+}
+
+.nav-link {
+  font-size: 16px;
+  margin-right: 16px;
+  color: rgb(var(--text-alt));
+  font-weight: bold;
+}
+
+.title-text {
+  font-size: 24px;
+  color: rgb(var(--text));
+}

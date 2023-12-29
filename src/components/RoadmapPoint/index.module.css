@@ -26,6 +26,7 @@
 
 .title {
   top: 75px;
+  color: rgb(var(--text-alt));
 }
 
 @media (max-width: 768px) {

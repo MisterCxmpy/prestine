@@ -31,6 +31,11 @@
   margin-right: 16px;
   color: rgb(var(--text-alt));
   font-weight: bold;
+  transition: color 0.1s ease;
+
+  &:hover {
+    color: rgb(var(--text));
+  }
 }
 
 .title-text {

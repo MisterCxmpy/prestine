@@ -1,0 +1,61 @@
+.featured-card {
+  max-width: 400px;
+  min-height: 200px;
+  width: 100%;
+  font-weight: bold;
+  background: rgba(var(--primary), 0.05);
+  text-align: center;
+  padding: 20px;
+  border-radius: var(--border-radius);
+  position: relative;
+
+  > h1 {
+    margin: 15px 0;
+    font-size: 22px;
+  }
+
+  > p {
+    font-size: 20px;
+    color: rgb(var(--text-alt));
+    margin-bottom: 30px;
+  }
+}
+
+.featured-card:hover::after {
+  opacity: 1;
+}
+
+.featured-card:hover::before {
+  opacity: 1;
+}
+
+.featured-card::before,
+.featured-card::after {
+  border-radius: inherit;
+  content: "";
+  height: 100%;
+  left: 0px;
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  transition: opacity 500ms;
+  width: 100%;
+}
+
+.featured-card::before {
+  background: radial-gradient(
+    800px circle at var(--mouse-x) var(--mouse-y), 
+    rgba(255, 255, 255, 0.02),
+    transparent 40%
+  );
+  z-index: 3;
+}
+
+.featured-card::after {  
+  background: radial-gradient(
+    600px circle at var(--mouse-x) var(--mouse-y), 
+    rgba(255, 255, 255, 0.1),
+    transparent 40%
+  );
+  z-index: 1;
+}

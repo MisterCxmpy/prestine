@@ -37,6 +37,7 @@
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
+    transition: background 0.1s ease, color 0.1s ease;
   }
 }
 
@@ -61,4 +62,50 @@
 .image {
   width: 100%;
   height: auto;
+}
+
+
+.solutions, .key-features, .roadmap, .contact {
+  min-height: 70vh;
+  gap: 50px;
+}
+
+.solution-list {
+  align-items: baseline;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.featured-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+.roadmap-summary {
+  font-size: 22px;
+  color: rgb(var(--text-alt));
+  text-align: center;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.roadmap-line {
+  width: 100%;
+  height: 4px;
+  border-radius: var(--border-radius);
+  background: rgb(var(--primary));
+  margin-top: 100px;
+  margin-bottom: 40px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.roadmap-desc {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }

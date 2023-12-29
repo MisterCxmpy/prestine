@@ -1,0 +1,14 @@
+.roadmap-card {
+  width: 100%;
+  font-weight: bold;
+
+  > h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  > p {
+    font-size: 22px;
+    color: rgb(var(--text-alt));
+  }
+}

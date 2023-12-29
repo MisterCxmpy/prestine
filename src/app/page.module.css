@@ -28,12 +28,12 @@
   margin-top: 10px;
 }
 .call-to-action > button {
-  width: 200px;
+  width: 250px;
   margin-right: 20px;
   padding: 20px 0;
   border-radius: var(--border-radius);
   border: none;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: bold;
   cursor: pointer;
   transition: background 0.1s ease, color 0.1s ease;
@@ -99,12 +99,12 @@
 }
 
 .contact-btn {
-  width: 200px;
+  width: 250px;
   margin-right: 20px;
   padding: 20px 0;
   border-radius: var(--border-radius);
   border: none;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: bold;
   cursor: pointer;
   transition: background 0.1s ease, color 0.1s ease;
@@ -118,5 +118,21 @@
 @media (min-width: 924px) {
   .sub-heading {
     max-width: 50vw;
+  }
+}
+@media (min-width: 1100px) {
+  .sub-heading {
+    max-width: 45vw;
+  }
+}
+@media (max-width: 640px) {
+  .title {
+    font-size: 44px;
+  }
+  .sub-heading {
+    font-size: 24px;
+  }
+  .roadmap-summary {
+    font-size: 20px;
   }
 }/*# sourceMappingURL=page.module.css.map */

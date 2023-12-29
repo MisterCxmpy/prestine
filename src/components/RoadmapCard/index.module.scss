@@ -12,3 +12,15 @@
     color: rgb(var(--text-alt));
   }
 }
+
+@media (max-width: 640px) {
+  .roadmap-card {
+    > h1 {
+      font-size: 20px;
+    }
+  
+    > p {
+      font-size: 18px;
+    }
+  }
+}

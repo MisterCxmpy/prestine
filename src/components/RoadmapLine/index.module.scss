@@ -1,0 +1,12 @@
+.roadmap-line {
+  width: 100vw;
+  margin-left: calc((100% - 100vw + -16px) / 2);
+  height: 4px;
+  border-radius: var(--border-radius);
+  background: rgb(var(--primary));
+  margin-top: 100px;
+  margin-bottom: 40px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}

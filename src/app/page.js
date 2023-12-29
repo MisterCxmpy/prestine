@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import prestineImage from "../../public/static/images/Prestine POS Application.png";
-import { FeaturedCard, RoadmapCard, RoadmapPoint, SolutionCard } from "@/components";
+import { FeaturedCard, RoadmapCard, RoadmapLine, RoadmapPoint, SolutionCard } from "@/components";
 
 export default function Home() {
   return (
@@ -17,6 +17,7 @@ export default function Home() {
         </div>
       </section>
       <Image
+        priority={true}
         src={prestineImage}
         alt="Prestine POS Application"
         className={styles["image"]}
@@ -91,12 +92,7 @@ export default function Home() {
           plan, December 24 will mark the release of v2. Stay tuned for upcoming
           developments and news for Prestine!
         </p>
-        <div className={styles['roadmap-line']}>
-          <RoadmapPoint title={"DEC 23 - v1.0 Release"} />
-          <RoadmapPoint title={"FEB 24 - Customization Update"} />
-          <RoadmapPoint title={"JUNE/JULY 24 - v2.0 Development Begings"} />
-          <RoadmapPoint title={"DEC 24 - v2.0 Release"} />
-        </div>
+        <RoadmapLine />
         <div className={styles['roadmap-desc']}>
           <RoadmapCard title={"DEC 23 - v1.0 Release"} desc={"With V1.0 live, the spotlight shifts to enhancing customization options, offering users the freedom to personalize their experience in dry cleaning management."} />
           <RoadmapCard title={"FEB 24 - Customization Update"} desc="Acknowledging the need for more personalization, the focus is on actively planning to amplify the application, ensuring a tailored experience for users." />
@@ -106,6 +102,7 @@ export default function Home() {
       </section>
       <section className={`${styles["contact"]} fx-container fx-column`}>
         <h1 className="section-heading">Interested? Get in contact.</h1>
+        <button className={styles["contact-btn"]}>Contact</button>
       </section>
     </div>
   );

@@ -11,7 +11,6 @@
 }
 .roadmap-point > p {
   position: absolute;
-  bottom: -50px;
   width: -moz-max-content;
   width: max-content;
   max-width: 320px;
@@ -21,6 +20,14 @@
   font-weight: bold;
 }
 
+.date {
+  bottom: 75px;
+}
+
+.title {
+  top: 75px;
+}
+
 .roadmap-point:nth-child(1) {
   left: 20%;
 }
@@ -28,22 +35,11 @@
 .roadmap-point:nth-child(2) {
   left: 40%;
 }
-.roadmap-point:nth-child(2) > p {
-  top: -50px;
-  bottom: 0;
-}
 
 .roadmap-point:nth-child(3) {
   left: 60%;
 }
-.roadmap-point:nth-child(3) > p {
-  bottom: -82px;
-}
 
 .roadmap-point:nth-child(4) {
   left: 80%;
-}
-.roadmap-point:nth-child(4) > p {
-  top: -50px;
-  bottom: 0;
 }/*# sourceMappingURL=index.module.css.map */

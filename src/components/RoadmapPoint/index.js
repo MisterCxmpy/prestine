@@ -1,10 +1,11 @@
 import React from 'react'
 import styles from './index.module.css'
 
-export default function RoadmapPoint({ title }) {
+export default function RoadmapPoint({ date, title }) {
   return (
     <div className={styles['roadmap-point']}>
-      <p>{title}</p>
+      <p className={styles['date']}>{date}</p>
+      <p className={styles['title']}>{title}</p>
     </div>
   )
 }

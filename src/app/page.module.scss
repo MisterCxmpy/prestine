@@ -21,7 +21,7 @@
 .sub-heading {
   font-size: 30px;
   color: rgb(var(--text-alt));
-  max-width: 40vw;
+  max-width: 100%;
 }
 
 .call-to-action {
@@ -38,6 +38,7 @@
     font-weight: bold;
     cursor: pointer;
     transition: background 0.1s ease, color 0.1s ease;
+    margin-bottom: 20px;
   }
 }
 
@@ -91,21 +92,37 @@
   margin: 20px 0;
 }
 
-.roadmap-line {
-  width: 100%;
-  height: 4px;
-  border-radius: var(--border-radius);
-  background: rgb(var(--primary));
-  margin-top: 100px;
-  margin-bottom: 40px;
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-
 .roadmap-desc {
   margin-top: 100px;
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 50px;
+}
+
+.contact {
+  align-items: center;
+}
+
+.contact-btn {
+  width: 200px;
+  margin-right: 20px;
+  padding: 20px 0;
+  border-radius: var(--border-radius);
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.1s ease, color 0.1s ease;
+  background: rgb(var(--secondary));
+  color: rgb(var(--text));
+
+  &:hover {
+    background: rgba(var(--secondary), 0.3);
+  }
+}
+
+@media (min-width: 924px) {
+  .sub-heading {
+    max-width: 50vw;
+  }
 }

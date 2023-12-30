@@ -126,12 +126,6 @@
   }
 }
 @media (max-width: 640px) {
-  .title {
-    font-size: 44px;
-  }
-  .sub-heading {
-    font-size: 24px;
-  }
   .roadmap-summary {
     font-size: 20px;
   }

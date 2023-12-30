@@ -1,0 +1,40 @@
+.main {
+  width: 100%;
+  max-width: var(--max-width);
+  height: 100%;
+  min-height: 100vh;
+  position: relative;
+  padding-top: calc(1 * var(--header-height));
+}
+
+.hero {
+  width: 100%;
+  margin: 15vh 0;
+  gap: 20px;
+  text-align: center;
+}
+
+.title {
+  font-size: 60px;
+}
+
+.sub-heading {
+  font-size: 30px;
+  color: rgb(var(--text-alt));
+  max-width: 100%;
+}
+
+.payment-options {
+  width: 95%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 100px !important;
+  justify-items: center;
+  margin: 0 auto;
+}
+
+@media (max-width: 480px) {
+  .payment-options {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}

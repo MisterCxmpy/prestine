@@ -7,8 +7,8 @@ export default function Home() {
   return (
     <div className={styles["main"]}>
       <section className={`${styles["hero"]} fx-center fx-column`}>
-        <h1 className={styles["title"]}>Prestine: Elevate Efficiency</h1>
-        <h2 className={styles["sub-heading"]}>
+        <h1 className={`${styles["title"]} hero-title`}>Prestine: Elevate Efficiency</h1>
+        <h2 className={`${styles["sub-heading"]} hero-sub-heading`}>
           Simplify, Boost Efficiency, Delight Customers with Prestine.
         </h2>
         <div className={styles["call-to-action"]}>

@@ -5,7 +5,7 @@ import { FeaturedCard, RoadmapCard, RoadmapLine, RoadmapPoint, SolutionCard } fr
 
 export default function Home() {
   return (
-    <div className={styles["main"]}>
+    <div id='home' className={styles["main"]}>
       <section className={`${styles["hero"]} fx-center fx-column`}>
         <h1 className={`${styles["title"]} hero-title`}>Prestine: Elevate Efficiency</h1>
         <h2 className={`${styles["sub-heading"]} hero-sub-heading`}>
@@ -13,7 +13,6 @@ export default function Home() {
         </h2>
         <div className={styles["call-to-action"]}>
           <button className={styles["action-1"]}>Learn more</button>
-          <button className={styles["action-2"]}>Read Documentation</button>
         </div>
       </section>
       <Image
@@ -22,7 +21,7 @@ export default function Home() {
         alt="Prestine POS Application"
         className={styles["image"]}
       />
-      <section className={`${styles["solutions"]} fx-container fx-column`}>
+      <section id='learn-more' className={`${styles["solutions"]} fx-container fx-column`}>
         <h1 className="section-heading">
           Practical Solutions for Your Business
         </h1>
@@ -47,7 +46,7 @@ export default function Home() {
           />
         </div>
       </section>
-      <section className={`${styles["key-features"]} fx-container fx-column`}>
+      <section id='features' className={`${styles["key-features"]} fx-container fx-column`}>
         <h1 className="section-heading">Key Features</h1>
         <div className={`${styles["featured-list"]}`}>
           <FeaturedCard
@@ -82,25 +81,7 @@ export default function Home() {
           />
         </div>
       </section>
-      <section className={`${styles["roadmap"]} fx-container fx-column`}>
-        <h1 className="section-heading">Roadmap Ahead: Future Developments</h1>
-        <p className={styles['roadmap-summary']}>
-          Following the release of v1, the focus is now on enhancing
-          customization options, providing users the freedom to personalize
-          their experience. Looking ahead, v2 is on the horizon - a complete
-          overhaul with new features, design, and more. If all goes according to
-          plan, December 24 will mark the release of v2. Stay tuned for upcoming
-          developments and news for Prestine!
-        </p>
-        <RoadmapLine />
-        <div className={styles['roadmap-desc']}>
-          <RoadmapCard title={"DEC 23 - v1.0 Release"} desc={"With V1.0 live, the spotlight shifts to enhancing customization options, offering users the freedom to personalize their experience in dry cleaning management."} />
-          <RoadmapCard title={"FEB 24 - Customization Update"} desc="Acknowledging the need for more personalization, the focus is on actively planning to amplify the application, ensuring a tailored experience for users." />
-          <RoadmapCard title={"JUNE/JULY 24 - v2.0 Development Begings"} desc="Looking forward, the roadmap outlines a planning phase for V2.0, envisioning a complete overhaul with fresh features, design, and more." />
-          <RoadmapCard title={"DEC 24 - v2.0 Release"} desc="December is the target for the V2.0 release, bringing a comprehensive update with new features and design. Stay tuned for ongoing developments and news for Prestine!" />
-        </div>
-      </section>
-      <section className={`${styles["contact"]} fx-container fx-column`}>
+      <section id='contact' className={`${styles["contact"]} fx-container fx-column`}>
         <h1 className="section-heading">Interested? Get in contact.</h1>
         <button className={styles["contact-btn"]}>Contact</button>
       </section>

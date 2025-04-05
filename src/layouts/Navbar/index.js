@@ -1,7 +1,7 @@
 "use client"
 import React, { useState, useEffect } from 'react';
-import Link from 'next/link';
 import styles from './index.module.css';
+import { Link } from 'react-scroll';
 
 export default function Navbar() {
   const [isNavbarFixed, setIsNavbarFixed] = useState(false);
@@ -26,24 +26,30 @@ export default function Navbar() {
       <nav className={`${styles['container']}`}>
         <div className={`${styles['items']} fx-center`}>
           <div className={styles['title']}>
-            <Link href="/">
+            <ScrollNavLink to="/">
               <span className={`${styles['nav-link']} ${styles["title-text"]}`}>Prestine</span>
-            </Link>
+            </ScrollNavLink>
           </div>
-          <Link href="/pricing">
-            <span className={styles['nav-link']}>Pricing</span>
-          </Link>
-          <Link href="/features">
+          <ScrollNavLink to="learn-more">
+            <span className={styles['nav-link']}>Learn more</span>
+          </ScrollNavLink>
+          <ScrollNavLink to="features">
             <span className={styles['nav-link']}>Features</span>
-          </Link>
-          <Link href="/documentation">
-            <span className={styles['nav-link']}>Documentation</span>
-          </Link>
-          <Link href="/changelog">
-            <span className={styles['nav-link']}>Change Log</span>
-          </Link>
+          </ScrollNavLink>
+          <ScrollNavLink to="contact">
+            <span className={styles['nav-link']}>Contact</span>
+          </ScrollNavLink>
         </div>
       </nav>
     </header>
   );
+}
+
+function ScrollNavLink({ children, to}) {
+
+  return (
+    <Link to={to} spy={true} smooth={true} offset={-150} duration={500}>
+      {children}
+    </Link>
+  )
 }

@@ -61,8 +61,8 @@
   height: auto;
 }
 
-.solutions, .key-features, .roadmap, .contact {
-  min-height: 70vh;
+.solutions, .key-features, .roadmap {
+  min-height: 60vh !important;
   gap: 50px;
 }
 
@@ -96,6 +96,8 @@
 
 .contact {
   align-items: center;
+  min-height: unset !important;
+  height: 30vh;
 }
 
 .contact-btn {
